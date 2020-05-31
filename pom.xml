@@ -12,6 +12,8 @@
         <module>mycloud-provider</module>
         <module>mycloud-consumer</module>
         <module>mycloud-eureka</module>
+        <module>mycloud-provider-cluster</module>
+        <module>mycloud-provider-hystrix</module>
     </modules>
 
     <properties>

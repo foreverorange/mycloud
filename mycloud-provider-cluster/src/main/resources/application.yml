@@ -1,0 +1,18 @@
+server:
+  port: 8004
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.ztf.api.bean
+spring:
+  application:
+    name: mycloud-provider
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/agile?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: P@ssw0rd
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8003/eureka/

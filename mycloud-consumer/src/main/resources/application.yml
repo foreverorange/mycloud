@@ -1,2 +1,11 @@
 server:
   port: 8002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8003/eureka/
+    register-with-eureka: false # 消费者不需要注册
+
+feign:
+  hystrix:
+    enabled: true # 启用服务降级
