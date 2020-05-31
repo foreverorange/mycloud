@@ -1,0 +1,11 @@
+server:
+  port: 8003
+
+eureka:
+  instance:
+    hostname: localhost # eureka服务端的实例名字
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+    register-with-eureka: false # 是否向注册中心注册自己，默认true，server应设置为false
+    fetch-registry: false # 如果是false，表示自己是eureka server
