@@ -1,0 +1,15 @@
+server:
+  port: 8006
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8003/eureka/
+spring:
+  application:
+    name: mycloud-zuul
+zuul:
+  routes:
+    myprovider.serviceId: mycloud-provider
+    myprovider.path: /myprovider/**
+  ignored-services: "*"
+#  prefix: /ztf

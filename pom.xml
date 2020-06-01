@@ -14,6 +14,7 @@
         <module>mycloud-eureka</module>
         <module>mycloud-provider-cluster</module>
         <module>mycloud-provider-hystrix</module>
+        <module>mycloud-zuul</module>
     </modules>
 
     <properties>
