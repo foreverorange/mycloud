@@ -1,10 +1,10 @@
 package com.ztf.provider.controller;
 
+import com.ztf.MyService;
 import com.ztf.api.bean.Corp;
 import com.ztf.provider.service.CorpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +21,15 @@ public class CorpController {
 
     @Autowired
     CorpService corpService;
+
+    @Autowired
+    MyService myService;
+
+    @GetMapping("/test")
+    public String testMyStarter() {
+        myService.helloWorld();
+        return "ok";
+    }
 
     @GetMapping("/corps")
     List<Corp> getAllCorps() {

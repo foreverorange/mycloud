@@ -16,3 +16,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8003/eureka/
+
+## 自定义的一个starter
+local:
+  orange:
+    id: 007
+    name: myorange
+    age: 26

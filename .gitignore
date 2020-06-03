@@ -1,3 +1,9 @@
+mycloud-consumer/target/
+mycloud-eureka/target/
+mycloud-provider-cluster/target/
+mycloud-provider-hystrix/target/
+mycloud-provider/target/
+mycloud-zuul/target/
 .idea/
 mycloud.iml
 # Compiled class file
