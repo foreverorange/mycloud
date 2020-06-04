@@ -16,6 +16,7 @@
         <module>mycloud-provider-hystrix</module>
         <module>mycloud-zuul</module>
         <module>orange-spring-boot-starter</module>
+        <module>queue</module>
     </modules>
 
     <properties>
