@@ -1,5 +1,6 @@
 package com.ztf;
 
+import java.util.LinkedList;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,9 @@ import java.util.concurrent.TimeUnit;
 public class TestBlockingQueue {
 
     public static void main(String[] args) {
+        LinkedList<Integer> linkedList = new LinkedList<Integer>();
+        linkedList.offer(1);
+        linkedList.poll();
         LinkedBlockingQueue<Integer> queue = new LinkedBlockingQueue<Integer>(5);
 
         Producer producer = new Producer("producer-1", queue);
