@@ -1,4 +1,4 @@
-package com.ztf;
+package com.ztf.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
