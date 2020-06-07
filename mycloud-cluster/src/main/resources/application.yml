@@ -1,0 +1,38 @@
+# 创建server1
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8003
+
+eureka:
+  instance:
+    hostname: server-1
+  client:
+    service-url:
+      defaultZone: http://server-2:8004/eureka/
+
+---
+# 创建server2
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8004
+
+eureka:
+  instance:
+    hostname: server-2
+  client:
+    service-url:
+      defaultZone: http://server-1:8003/eureka/
+
+---
+# 客户端配置
+spring:
+  application:
+    name: client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server-1:8003/eureka/,http://server-2:8004/eureka/
