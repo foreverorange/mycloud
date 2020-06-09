@@ -5,7 +5,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:8003/eureka/
     register-with-eureka: false # 消费者不需要注册
-
 feign:
   hystrix:
     enabled: true # 启用服务降级
+spring:
+  application:
+    name: mycloud-consumer

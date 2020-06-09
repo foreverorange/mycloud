@@ -17,7 +17,8 @@
         <module>mycloud-zuul</module>
         <module>orange-spring-boot-starter</module>
         <module>queue</module>
-        <module>mycloud-cluster</module>
+        <module>mycloud-eureka-cluster</module>
+        <module>mycloud-eureka1</module>
     </modules>
 
     <properties>

@@ -1,11 +1,15 @@
 server:
   port: 8003
-
 eureka:
   instance:
+#    hostname: apple
     hostname: localhost # eureka服务端的实例名字
   client:
     service-url:
+#      defaultZone: http://orange:8006/eureka/
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     register-with-eureka: false # 是否向注册中心注册自己，默认true，server应设置为false
     fetch-registry: false # 服务端本身就是维护服务实例的，所以并不需要去检索服务，默认true，server应设置为false
+spring:
+  application:
+    name: eureka-server
