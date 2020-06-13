@@ -11,5 +11,19 @@
 
     <artifactId>queue</artifactId>
 
+    <dependencies>
+        <!-- inject、single需要注入 -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.2.3</version>
+        </dependency>
+        <!--set 、map容器注入需要引包-->
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-multibindings</artifactId>
+            <version>4.2.3</version>
+        </dependency>
+    </dependencies>
 
 </project>
